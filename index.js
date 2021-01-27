@@ -79,15 +79,13 @@ function Car(model, milesPerGallon) {
   this.odometer = 0;
 }
 
-const myCar = new Car("bmw", 10);
-console.log(myCar);
+// const myCar = new Car("bmw", 10);
+
 Car.prototype.fill = function (gallons) {
-  this.tank + gallons;
+  this.tank = this.tank + gallons;
 };
 
-// let myCar = new Car("bmw", 10);
-
-myCar.fill;
+// Car.tank = 10;
 
 // console.log(myCar.fill(10));
 // Car.prototype.drive = function (miles ){
